@@ -1,0 +1,188 @@
+/** General **/ 
+
+*{
+	margin:0; 
+	padding:0; 
+}
+
+body{
+	width:95%; 
+	margin: 0 auto; 
+	font-family: Helvetica, sans-serif; 
+	padding:0;
+	background-color:#efefef; 
+}
+
+/** Header **/ 
+
+header{
+	width:100%;
+	clear:both; 
+	overflow:auto;
+	margin:0 auto; 
+	margin-bottom:.4em; 
+}
+
+ header #logo{
+	float: left; 
+	padding:20px 5px 0;
+	text-align:center;
+}
+
+
+/** Navigation **/ 
+
+nav{
+	margin: 0 auto; 
+	width:55%;
+	float:right; 
+	line-height:50px;
+	padding-top:20px;
+}
+nav ul {
+	list-style:none;
+	display:inline;
+	margin:0 auto; 
+	overflow:hidden;
+	padding:0; 
+}
+
+nav ul li {
+	width:20%;
+	float:left; 
+	margin:0 auto; 
+	background-color:#efefef;
+	padding:0;
+	font-size:1em;
+	
+}
+
+nav ul li a{
+	margin:0 auto; 
+	text-decoration:none; 
+	text-align:center; 
+	display:block; 
+	color:#333333;/* dark gray */
+	font-weight:bold; 
+	font-size:1em;
+	padding:.8em; 
+	width:70%;
+}
+
+.dropbtn{
+	display:inline-block; 
+	color:#333333; 
+	text-align:center;
+	font-size:1em;  
+}
+
+.active {
+	background-color:#333333;
+	color:#fff; 
+}
+
+li.dropdown{
+	display:inline-block; 
+}
+
+.dropdown-content{
+	display:none; 
+	position:absolute; 
+	background-color:#fff; 
+	min-width:160px; 
+	box-shadow:0px 2px; 
+}
+
+.dropdown-content a{
+	color:#000; 
+	font-weight:none; 
+	text-decoration:none; 
+	padding:5px 6px; 
+	display:block; 
+	text-align:left; 
+	font-size:.9em; 
+}
+
+.dropdown-content a:hover{
+	background-color:#f1f1f1;
+	color:#000; 
+}
+
+.show{
+	display:block; 
+}
+
+/** Content **/ 
+#pageWrap{
+	width:100%; 
+	background-color:#fff; 
+}
+
+/** Footer **/ 
+
+footer{
+	width:100%; 
+	clear:both;
+	font-size:.9em; 
+	margin-top:2.5em; 
+	padding-top:1em; 
+	text-align:center; 
+	margin-bottom:1em; 
+}
+
+@media only screen and (max-width:1000px) and (orientation:portrait){
+	body{
+		width:90%; 
+	}
+	header{
+		width:100%; 
+	}
+	
+	#logo{
+		float:none; 
+		margin:0 auto;
+		width:95%; 
+	}
+	
+	#logo img {
+		
+	}
+	
+	nav{
+		float:none;
+		width:50%;
+		margin:0 auto; 
+	}
+	
+	nav ul {
+		margin:0 auto;
+		overflow:hidden;
+		padding:0; 
+	}
+	
+	nav ul li {
+		float:none;  
+		margin: 0 auto;
+		font-weight:bold;
+		padding:0;
+		width:100%;
+		
+	}
+	
+	nav ul li a{
+		display:inline-block;  
+		font-size:1em; 
+		text-align:center;
+		margin:0 auto; 
+	}
+
+  .active {
+	  color:#fff; 
+    }
+	
+	.dropbtn
+	{
+		font-size:1em; 
+	}
+
+}

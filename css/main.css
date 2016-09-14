@@ -1,0 +1,54 @@
+/** Main CSS for content of webpage **/
+html, body{
+	min-height:100%; 
+	display:flex; 
+	flex-direction: column; 
+	line-height:1.5; 
+}
+ 
+#staff_content{
+	margin: 0 auto; 
+}
+/** Banner Image **/ 
+#banner {
+	margin:0 auto; 
+	padding:10px 50px 10px; 
+	position:relative;
+	width:65%;
+}
+
+#banner img {
+	margin:0 auto;
+	width:940px;
+	height:385px;
+	width:100%;
+}
+/** Staff table flexbox table **/ 
+
+#staff_intro{
+	margin:0 auto;
+	text-align:center;
+	color:#333333; 
+}
+.staff_table{
+	margin-top: 10px; 
+	display:flex; 
+	flex-wrap:wrap; 
+	justify-content:center;
+	flex-direction:row; 
+}
+
+.staff_member{
+	margin:10px; 
+}
+
+@media only screen and (max-width:1550px) and (orientation:portrait){
+	#banner{
+		width:100%;
+		padding:0;
+		padding-top:5px; 
+	}
+	#banner img {
+		width:100%; 
+	}
+}
